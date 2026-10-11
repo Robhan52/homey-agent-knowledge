@@ -1,1 +1,1449 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <title>Homey Inventory</title>
+</head>
+<body>
+  <h1>Homey Inventory</h1>
+  <p>Denne siden inneholder gjeldende Homey-inventar.</p>
 
+  <h2>Inventardata</h2>
+  <pre>
+{
+"generatedAt": "2026-10-11T12:36:23.152Z",
+  "homey": {
+    "platform": "local",
+    "version": "13.5.1"
+  },
+  "zones": [
+    {
+      "name": "andre etasje",
+      "parent": "Hjem"
+    },
+    {
+      "name": "Bad  2etg",
+      "parent": "andre etasje"
+    },
+    {
+      "name": "Bad 1etg",
+      "parent": "første etasje"
+    },
+    {
+      "name": "Brukere",
+      "parent": "Hjem"
+    },
+    {
+      "name": "Drivhus",
+      "parent": "Ute"
+    },
+    {
+      "name": "første etasje",
+      "parent": "Hjem"
+    },
+    {
+      "name": "Gang 1etg",
+      "parent": "første etasje"
+    },
+    {
+      "name": "Gang 2etg",
+      "parent": "andre etasje"
+    },
+    {
+      "name": "Garasje",
+      "parent": "Hjem"
+    },
+    {
+      "name": "Garderobe ",
+      "parent": "andre etasje"
+    },
+    {
+      "name": "Gjesterom 2.etg",
+      "parent": "andre etasje"
+    },
+    {
+      "name": "Hjem",
+      "parent": null
+    },
+    {
+      "name": "Hovedsoverom",
+      "parent": "andre etasje"
+    },
+    {
+      "name": "jacuzzi",
+      "parent": "Ute"
+    },
+    {
+      "name": "Kjøkken",
+      "parent": "første etasje"
+    },
+    {
+      "name": "Soverom 1.etg",
+      "parent": "første etasje"
+    },
+    {
+      "name": "Stue",
+      "parent": "første etasje"
+    },
+    {
+      "name": "Termostater",
+      "parent": "Zwater2"
+    },
+    {
+      "name": "Terrasse",
+      "parent": "Ute"
+    },
+    {
+      "name": "Til Dashbord",
+      "parent": "Hjem"
+    },
+    {
+      "name": "Ute",
+      "parent": "Hjem"
+    },
+    {
+      "name": "Uthus",
+      "parent": "Hjem"
+    },
+    {
+      "name": "Vaskerom",
+      "parent": "første etasje"
+    },
+    {
+      "name": "Zwater2",
+      "parent": "Hjem"
+    }
+  ],
+  "devices": [
+    {
+      "name": " Temperatur ute",
+      "zone": "Hjem",
+      "class": "sensor",
+      "virtualClass": null,
+      "driver": "homey:app:com.netatmo:weatherstation",
+      "capabilities": [
+        "measure_battery",
+        "measure_humidity",
+        "measure_temperature"
+      ]
+    },
+    {
+      "name": "[TV] Samsung 7 Series (65)",
+      "zone": "Stue",
+      "class": "tv",
+      "virtualClass": null,
+      "driver": "homey:app:com.smartthings:tv",
+      "capabilities": [
+        "channel_down",
+        "channel_up",
+        "onoff",
+        "volume_down",
+        "volume_up"
+      ]
+    },
+    {
+      "name": "1.Gang",
+      "zone": "Termostater",
+      "class": "thermostat",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-TEMP2",
+      "capabilities": [
+        "locked",
+        "measure_battery",
+        "measure_humidity",
+        "measure_temperature",
+        "onoff",
+        "target_temperature",
+        "thermostat_mode_single",
+        "thermostat_state"
+      ]
+    },
+    {
+      "name": "1.Gang",
+      "zone": "Zwater2",
+      "class": "socket",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-Water2",
+      "capabilities": [
+        "onoff"
+      ]
+    },
+    {
+      "name": "2.Soverom",
+      "zone": "Zwater2",
+      "class": "socket",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-Water2",
+      "capabilities": [
+        "onoff"
+      ]
+    },
+    {
+      "name": "3.Bad",
+      "zone": "Zwater2",
+      "class": "socket",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-Water2",
+      "capabilities": [
+        "onoff"
+      ]
+    },
+    {
+      "name": "4.5.Stue_6.kjøkken",
+      "zone": "Termostater",
+      "class": "thermostat",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-TEMP2",
+      "capabilities": [
+        "locked",
+        "measure_battery",
+        "measure_humidity",
+        "measure_temperature",
+        "onoff",
+        "target_temperature",
+        "thermostat_mode_single",
+        "thermostat_state"
+      ]
+    },
+    {
+      "name": "4.Stue",
+      "zone": "Zwater2",
+      "class": "socket",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-Water2",
+      "capabilities": [
+        "onoff"
+      ]
+    },
+    {
+      "name": "5. Stue V/kjøkken",
+      "zone": "Zwater2",
+      "class": "socket",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-Water2",
+      "capabilities": [
+        "onoff"
+      ]
+    },
+    {
+      "name": "6.Kjøkken",
+      "zone": "Zwater2",
+      "class": "socket",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-Water2",
+      "capabilities": [
+        "onoff"
+      ]
+    },
+    {
+      "name": "6.Kjøkken",
+      "zone": "Termostater",
+      "class": "thermostat",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-TEMP2",
+      "capabilities": [
+        "locked",
+        "measure_battery",
+        "measure_humidity",
+        "measure_temperature",
+        "onoff",
+        "target_temperature",
+        "thermostat_mode_single",
+        "thermostat_state"
+      ]
+    },
+    {
+      "name": "7. Ikke i bruk",
+      "zone": "Zwater2",
+      "class": "socket",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-Water2",
+      "capabilities": [
+        "onoff"
+      ]
+    },
+    {
+      "name": "8. Ikke i bruk",
+      "zone": "Zwater2",
+      "class": "socket",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-Water2",
+      "capabilities": [
+        "onoff"
+      ]
+    },
+    {
+      "name": "9. Ikke i bruk",
+      "zone": "Zwater2",
+      "class": "socket",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-Water2",
+      "capabilities": [
+        "onoff"
+      ]
+    },
+    {
+      "name": "Bad",
+      "zone": "Termostater",
+      "class": "thermostat",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-TEMP2",
+      "capabilities": [
+        "locked",
+        "measure_battery",
+        "measure_humidity",
+        "measure_temperature",
+        "onoff",
+        "target_temperature",
+        "thermostat_mode_single",
+        "thermostat_state"
+      ]
+    },
+    {
+      "name": "Balbo BWA",
+      "zone": "jacuzzi",
+      "class": "other",
+      "virtualClass": null,
+      "driver": "homey:app:com.balboa:BWA",
+      "capabilities": [
+        "action_heater_mode",
+        "action_light_state",
+        "action_temp_range",
+        "action_update_data",
+        "alarm_connectivity",
+        "measure_heater",
+        "measure_heater_mode",
+        "measure_online",
+        "measure_temperature",
+        "target_temperature"
+      ]
+    },
+    {
+      "name": "Benk vask",
+      "zone": "Kjøkken",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:plejd",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Benk vindu",
+      "zone": "Kjøkken",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:plejd",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Bil 1",
+      "zone": "Garasje",
+      "class": "car",
+      "virtualClass": null,
+      "driver": "homey:app:com.volvocars:cvehicle",
+      "capabilities": [
+        "charging_current_limit",
+        "charging_system_status",
+        "engine",
+        "ev_charging_state",
+        "locked",
+        "measure_battery",
+        "odometer",
+        "range_battery"
+      ]
+    },
+    {
+      "name": "Bil 2",
+      "zone": "Garasje",
+      "class": "car",
+      "virtualClass": null,
+      "driver": "homey:app:com.volvocars:cvehicle",
+      "capabilities": [
+        "charging_system_status",
+        "engine",
+        "ev_charging_state",
+        "locked",
+        "measure_battery",
+        "odometer",
+        "range",
+        "range_battery"
+      ]
+    },
+    {
+      "name": "Bryter garasjeport (gang)",
+      "zone": "Garasje",
+      "class": "remote",
+      "virtualClass": null,
+      "driver": "homey:app:se.nexa:MLT-1924",
+      "capabilities": []
+    },
+    {
+      "name": "Dimmer",
+      "zone": "Kjøkken",
+      "class": "button",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:button",
+      "capabilities": []
+    },
+    {
+      "name": "Gang 2.etg Trapp",
+      "zone": "Gang 2etg",
+      "class": "button",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:button",
+      "capabilities": []
+    },
+    {
+      "name": "Garderobe 2.etg",
+      "zone": "Garderobe ",
+      "class": "button",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:button",
+      "capabilities": []
+    },
+    {
+      "name": "Garderobe gang",
+      "zone": "Garderobe ",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:com.ikea.tradfri:dimmable_transformer",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Garderobelys h-side",
+      "zone": "Garderobe ",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:com.ikea.tradfri:dimmable_transformer",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Garderobelys v-side",
+      "zone": "Garderobe ",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:com.ikea.tradfri:dimmable_transformer",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Gulv",
+      "zone": "Gjesterom 2.etg",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:nl.philips.hue:bulb",
+      "capabilities": [
+        "button.migrate_v3",
+        "dim",
+        "light_hue",
+        "light_mode",
+        "light_saturation",
+        "light_temperature",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Hoveddør ",
+      "zone": "Hjem",
+      "class": "lock",
+      "virtualClass": null,
+      "driver": "homey:app:se.adamnoren.verisure:SmartLock",
+      "capabilities": [
+        "locked",
+        "measure_battery"
+      ]
+    },
+    {
+      "name": "Hovedskjerm gang",
+      "zone": "Til Dashbord",
+      "class": "other",
+      "virtualClass": null,
+      "driver": "homey:app:skogsaas.dashboards:dashboard",
+      "capabilities": []
+    },
+    {
+      "name": "Høyre Bryter (S2/Q2)",
+      "zone": "Uthus",
+      "class": "socket",
+      "virtualClass": null,
+      "driver": "homey:app:com.fibaro:FGS-223",
+      "capabilities": [
+        "measure_power",
+        "meter_power",
+        "onoff"
+      ]
+    },
+    {
+      "name": "I Garasjen",
+      "zone": "Garasje",
+      "class": "evcharger",
+      "virtualClass": null,
+      "driver": "homey:app:com.zaptec:go",
+      "capabilities": [
+        "alarm_generic.car_connected",
+        "available_installation_current",
+        "cable_permanent_lock",
+        "charge_mode",
+        "charging_button",
+        "charging_mode",
+        "communication_method",
+        "measure_current.phase1",
+        "measure_current.phase2",
+        "measure_current.phase3",
+        "measure_humidity",
+        "measure_power",
+        "measure_signal_strength",
+        "measure_temperature",
+        "meter_power",
+        "meter_power.current_session",
+        "meter_power.last_session",
+        "meter_power.signed_meter_value"
+      ]
+    },
+    {
+      "name": "Loft",
+      "zone": "Gang 2etg",
+      "class": "speaker",
+      "virtualClass": null,
+      "driver": "homey:app:com.google.chromecast:cast",
+      "capabilities": [
+        "speaker_album",
+        "speaker_artist",
+        "speaker_next",
+        "speaker_playing",
+        "speaker_prev",
+        "speaker_track",
+        "volume_mute",
+        "volume_set"
+      ]
+    },
+    {
+      "name": "Logg",
+      "zone": "Hjem",
+      "class": "other",
+      "virtualClass": null,
+      "driver": "homey:app:com.google.sheets:user",
+      "capabilities": []
+    },
+    {
+      "name": "Lys garasje ",
+      "zone": "Garasje",
+      "class": "socket",
+      "virtualClass": null,
+      "driver": "homey:app:com.fibaro:FGS-223",
+      "capabilities": [
+        "measure_power",
+        "meter_power",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Lys Garderobeskap",
+      "zone": "Hovedsoverom",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:com.ikea.tradfri:dimmable_transformer",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Lys seng",
+      "zone": "Soverom 1.etg",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:nl.philips.hue:bulb",
+      "capabilities": [
+        "button.migrate_v3",
+        "dim",
+        "light_hue",
+        "light_mode",
+        "light_saturation",
+        "light_temperature",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Markise bakside",
+      "zone": "Terrasse",
+      "class": "windowcoverings",
+      "virtualClass": "sunshade",
+      "driver": "homey:app:com.brel-home.brel:mle-25",
+      "capabilities": [
+        "windowcoverings_state",
+        "windowcoverings_tilt_down",
+        "windowcoverings_tilt_up"
+      ]
+    },
+    {
+      "name": "Markise framside",
+      "zone": "Terrasse",
+      "class": "windowcoverings",
+      "virtualClass": "sunshade",
+      "driver": "homey:app:com.brel-home.brel:mle-25",
+      "capabilities": [
+        "windowcoverings_state",
+        "windowcoverings_tilt_down",
+        "windowcoverings_tilt_up"
+      ]
+    },
+    {
+      "name": "Master bedroom",
+      "zone": "Hovedsoverom",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:nl.philips.hue:bulb",
+      "capabilities": [
+        "button.migrate_v3",
+        "dim",
+        "light_hue",
+        "light_mode",
+        "light_saturation",
+        "light_temperature",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Master Soverom Ved dør",
+      "zone": "Hovedsoverom",
+      "class": "button",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:button",
+      "capabilities": []
+    },
+    {
+      "name": "Master Soverom Ved seng",
+      "zone": "Hovedsoverom",
+      "class": "button",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:button",
+      "capabilities": []
+    },
+    {
+      "name": "NO_Norway_4",
+      "zone": "Til Dashbord",
+      "class": "sensor",
+      "virtualClass": null,
+      "driver": "homey:app:com.gruijter.powerhour:dap",
+      "capabilities": [
+        "hour_next_8h_highest",
+        "hour_next_8h_lowest",
+        "hour_next_day_highest",
+        "hour_next_day_lowest",
+        "hour_this_day_highest",
+        "hour_this_day_lowest",
+        "meter_price_h0",
+        "meter_price_h1",
+        "meter_price_h2",
+        "meter_price_h3",
+        "meter_price_h4",
+        "meter_price_h5",
+        "meter_price_h6",
+        "meter_price_h7",
+        "meter_price_last_month_avg",
+        "meter_price_next_8h_avg",
+        "meter_price_next_8h_highest",
+        "meter_price_next_8h_lowest",
+        "meter_price_next_day_avg",
+        "meter_price_next_day_highest",
+        "meter_price_next_day_lowest",
+        "meter_price_this_day_avg",
+        "meter_price_this_day_highest",
+        "meter_price_this_day_lowest",
+        "meter_price_this_month_avg",
+        "meter_rank_price_h0_next_8h",
+        "meter_rank_price_h0_this_day"
+      ]
+    },
+    {
+      "name": "Norske flaggdager",
+      "zone": "Hjem",
+      "class": "sensor",
+      "virtualClass": null,
+      "driver": "homey:app:com.Coderax.NorwegianServices:norwegianflagdays",
+      "capabilities": [
+        "meter_flagg_sensor",
+        "sensor_flagg",
+        "sensor_flagg_type"
+      ]
+    },
+    {
+      "name": "Ovn Uthus",
+      "zone": "Uthus",
+      "class": "thermostat",
+      "virtualClass": null,
+      "driver": "homey:app:com.glamox.smart-heater.namainis:heater-wt",
+      "capabilities": [
+        "measure_power",
+        "measure_temperature",
+        "meter_power",
+        "onoff",
+        "target_temperature"
+      ]
+    },
+    {
+      "name": "Pulse Tibber hjem",
+      "zone": "Hjem",
+      "class": "other",
+      "virtualClass": null,
+      "driver": "homey:app:com.tibber:pulse",
+      "capabilities": [
+        "accumulatedCost",
+        "measure_current.L1",
+        "measure_current.L2",
+        "measure_current.L3",
+        "measure_power",
+        "meter_power",
+        "meter_power.exported",
+        "meter_power.imported"
+      ]
+    },
+    {
+      "name": "Renovasjon hjem",
+      "zone": "Ute",
+      "class": "other",
+      "virtualClass": null,
+      "driver": "homey:app:no.norkart.renovasjon:renovasjon",
+      "capabilities": [
+        "next_pickup_date",
+        "next_pickup_days",
+        "next_pickup_type",
+        "waste_bio",
+        "waste_general",
+        "waste_paper",
+        "waste_plastic"
+      ]
+    },
+    {
+      "name": "Smart Implantat",
+      "zone": "Garasje",
+      "class": "sensor",
+      "virtualClass": null,
+      "driver": "homey:app:com.fibaro:FGBS-222",
+      "capabilities": [
+        "alarm_generic.input1",
+        "alarm_generic.input2",
+        "measure_humidity",
+        "measure_temperature.external1",
+        "measure_temperature.external2",
+        "measure_temperature.external3",
+        "measure_temperature.external4",
+        "measure_temperature.external5",
+        "measure_temperature.external6",
+        "measure_temperature.internal",
+        "measure_voltage.input1",
+        "measure_voltage.input2",
+        "onoff.output1",
+        "onoff.output2"
+      ]
+    },
+    {
+      "name": "Strømregning",
+      "zone": "Til Dashbord",
+      "class": "other",
+      "virtualClass": null,
+      "driver": "homey:app:no.almli.utilitycost:UtilityCosts",
+      "capabilities": [
+        "meter_avg_daily_consumption",
+        "meter_avg_daily_spot",
+        "meter_avg_monthly_spot",
+        "meter_consumption",
+        "meter_consumption_hour",
+        "meter_consumption_maxmonth",
+        "meter_cost_capacity",
+        "meter_cost_lastmonth",
+        "meter_cost_month",
+        "meter_cost_today",
+        "meter_cost_today_excl",
+        "meter_cost_year",
+        "meter_cost_yesterday",
+        "meter_energy",
+        "meter_grid_lastmonth",
+        "meter_grid_month",
+        "meter_grid_today",
+        "meter_grid_year",
+        "meter_grid_yesterday",
+        "meter_gridprice_incl",
+        "meter_power.acc",
+        "meter_power.month",
+        "meter_power.prevmonth",
+        "meter_power.year",
+        "meter_price_excl",
+        "meter_price_incl",
+        "meter_price_sum",
+        "meter_sum_current",
+        "meter_sum_day",
+        "meter_sum_month",
+        "meter_sum_year"
+      ]
+    },
+    {
+      "name": "Strømregning Enhet",
+      "zone": "Til Dashbord",
+      "class": "other",
+      "virtualClass": null,
+      "driver": "homey:app:no.almli.utilitycost:UtilityCostsDevice",
+      "capabilities": [
+        "meter_avg_daily_consumption",
+        "meter_consumption",
+        "meter_consumption_hour",
+        "meter_consumption_maxmonth",
+        "meter_cost_lastmonth",
+        "meter_cost_month",
+        "meter_cost_today",
+        "meter_cost_today_excl",
+        "meter_cost_year",
+        "meter_cost_yesterday",
+        "meter_energy",
+        "meter_grid_lastmonth",
+        "meter_grid_month",
+        "meter_grid_today",
+        "meter_grid_year",
+        "meter_grid_yesterday",
+        "meter_gridprice_incl",
+        "meter_power.acc",
+        "meter_power.month",
+        "meter_power.prevmonth",
+        "meter_power.year",
+        "meter_price_excl",
+        "meter_price_incl",
+        "meter_price_sum",
+        "meter_sum_current",
+        "meter_sum_day",
+        "meter_sum_month",
+        "meter_sum_year"
+      ]
+    },
+    {
+      "name": "Systemstatus termostater",
+      "zone": "Termostater",
+      "class": "other",
+      "virtualClass": null,
+      "driver": "homey:app:nl.qluster-it.DeviceCapabilities:virtualdevice",
+      "capabilities": [
+        "devicecapabilities_starttext"
+      ]
+    },
+    {
+      "name": "Taklys",
+      "zone": "Gang 1etg",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:plejd",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Taklys ",
+      "zone": "Kjøkken",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:plejd",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Taklys benk",
+      "zone": "Kjøkken",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:plejd",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Taklys sofa",
+      "zone": "Stue",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:plejd",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Taklys tv",
+      "zone": "Stue",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:plejd",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Temperatur inne",
+      "zone": "Hjem",
+      "class": "sensor",
+      "virtualClass": null,
+      "driver": "homey:app:com.netatmo:weatherstation",
+      "capabilities": [
+        "measure_co2",
+        "measure_humidity",
+        "measure_noise",
+        "measure_pressure",
+        "measure_temperature"
+      ]
+    },
+    {
+      "name": "Termostat bad 2.etg",
+      "zone": "Bad  2etg",
+      "class": "thermostat",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-TRM3",
+      "capabilities": [
+        "button.reset_meter",
+        "measure_power",
+        "measure_temperature",
+        "measure_temperature.external",
+        "measure_temperature.floor",
+        "measure_temperature.internal",
+        "measure_voltage",
+        "meter_power",
+        "onoff",
+        "target_temperature",
+        "thermostat_mode_single",
+        "thermostat_state"
+      ]
+    },
+    {
+      "name": "Tibber hjem",
+      "zone": "Hjem",
+      "class": "other",
+      "virtualClass": null,
+      "driver": "homey:app:com.tibber:home",
+      "capabilities": [
+        "measure_price_highest",
+        "measure_price_info_level",
+        "measure_price_level",
+        "measure_price_lowest",
+        "measure_price_total",
+        "price_level"
+      ]
+    },
+    {
+      "name": "TRÅDFRI Fjernkontroll",
+      "zone": "Soverom 1.etg",
+      "class": "remote",
+      "virtualClass": null,
+      "driver": "homey:app:com.ikea.tradfri:remote_control",
+      "capabilities": []
+    },
+    {
+      "name": "Tv",
+      "zone": "Stue",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:nl.philips.hue:bulb",
+      "capabilities": [
+        "button.migrate_v3",
+        "dim",
+        "light-gradient",
+        "light_hue",
+        "light_mode",
+        "light_saturation",
+        "light_temperature",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Ute",
+      "zone": "Garasje",
+      "class": "evcharger",
+      "virtualClass": null,
+      "driver": "homey:app:com.zaptec:go",
+      "capabilities": [
+        "alarm_generic.car_connected",
+        "available_installation_current",
+        "cable_permanent_lock",
+        "charge_mode",
+        "charging_button",
+        "charging_mode",
+        "communication_method",
+        "measure_current.phase1",
+        "measure_current.phase2",
+        "measure_current.phase3",
+        "measure_humidity",
+        "measure_power",
+        "measure_signal_strength",
+        "measure_temperature",
+        "meter_power",
+        "meter_power.current_session",
+        "meter_power.last_session",
+        "meter_power.signed_meter_value"
+      ]
+    },
+    {
+      "name": "Uthus",
+      "zone": "Uthus",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:nl.philips.hue:bulb",
+      "capabilities": [
+        "button.migrate_v3",
+        "dim",
+        "light_hue",
+        "light_mode",
+        "light_saturation",
+        "light_temperature",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Uthus ",
+      "zone": "Uthus",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:nl.philips.hue:bulb",
+      "capabilities": [
+        "button.migrate_v3",
+        "dim",
+        "light_hue",
+        "light_mode",
+        "light_saturation",
+        "light_temperature",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Uthus Taklys ",
+      "zone": "Uthus",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:se.emilohman.plejd:plejd",
+      "capabilities": [
+        "dim",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Vaskemaskin",
+      "zone": "Vaskerom",
+      "class": "other",
+      "virtualClass": null,
+      "driver": "homey:app:com.smartthings:washer",
+      "capabilities": [
+        "samsung_washer_current_job_state",
+        "samsung_washer_progress_percentage",
+        "samsung_washer_progress_remaining_time"
+      ]
+    },
+    {
+      "name": "Vegg",
+      "zone": "Gjesterom 2.etg",
+      "class": "light",
+      "virtualClass": null,
+      "driver": "homey:app:nl.philips.hue:bulb",
+      "capabilities": [
+        "button.migrate_v3",
+        "dim",
+        "light_hue",
+        "light_mode",
+        "light_saturation",
+        "light_temperature",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Vindmåler HM17 ",
+      "zone": "Hjem",
+      "class": "sensor",
+      "virtualClass": null,
+      "driver": "homey:app:com.netatmo:weatherstation",
+      "capabilities": [
+        "measure_battery",
+        "measure_gust_angle",
+        "measure_gust_strength",
+        "measure_wind_angle",
+        "measure_wind_strength"
+      ]
+    },
+    {
+      "name": "Virtuell batteri",
+      "zone": "Termostater",
+      "class": "battery",
+      "virtualClass": null,
+      "driver": "homey:app:com.arjankranenburg.virtual:virtual_switch",
+      "capabilities": [
+        "alarm_battery",
+        "measure_battery",
+        "onoff"
+      ]
+    },
+    {
+      "name": "Værvarsel",
+      "zone": "Hjem",
+      "class": "sensor",
+      "virtualClass": null,
+      "driver": "homey:app:no.yr:myr",
+      "capabilities": [
+        "forecast_time",
+        "measure_cloud_area_fraction",
+        "measure_fog_area_fraction",
+        "measure_gust_strength1",
+        "measure_humidity",
+        "measure_minutes_raining",
+        "measure_pressure",
+        "measure_rain.next_1_hour",
+        "measure_rain.next_30_minutes",
+        "measure_rain.next_6_hours",
+        "measure_rain_next_1_hour",
+        "measure_rain_next_6_hours",
+        "measure_temperature",
+        "measure_temperature.feels_like",
+        "measure_temperature.max_next_6_hours",
+        "measure_temperature.min_next_6_hours",
+        "measure_thunder_next_1_hour",
+        "measure_ultraviolet",
+        "measure_wind_angle",
+        "measure_wind_direction",
+        "measure_wind_strength1",
+        "sunrise_time",
+        "sunset_time",
+        "weather_description"
+      ]
+    },
+    {
+      "name": "Watty Tibber hjem",
+      "zone": "Hjem",
+      "class": "other",
+      "virtualClass": null,
+      "driver": "homey:app:com.tibber:watty",
+      "capabilities": [
+        "accumulatedCost",
+        "measure_current.L1",
+        "measure_current.L2",
+        "measure_current.L3",
+        "measure_power",
+        "meter_power",
+        "meter_power.exported",
+        "meter_power.imported"
+      ]
+    },
+    {
+      "name": "Z-Water2",
+      "zone": "Zwater2",
+      "class": "other",
+      "virtualClass": null,
+      "driver": "homey:app:no.thermofloor:Z-Water2",
+      "capabilities": [
+        "measure_temperature.input1",
+        "measure_temperature.input2",
+        "onoff"
+      ]
+    }
+  ],
+  "apps": [
+    {
+      "name": "Aeotec",
+      "version": "3.19.1"
+    },
+    {
+      "name": "Balboa",
+      "version": "2.5.1"
+    },
+    {
+      "name": "Brel",
+      "version": "2.0.2"
+    },
+    {
+      "name": "Chronograph",
+      "version": "2.2.3"
+    },
+    {
+      "name": "Dashboards",
+      "version": "1.3.0"
+    },
+    {
+      "name": "Device Capabilities",
+      "version": "3.0.7"
+    },
+    {
+      "name": "Fibaro",
+      "version": "3.8.18"
+    },
+    {
+      "name": "Glamox Heating",
+      "version": "2.0.9"
+    },
+    {
+      "name": "Google Chromecast",
+      "version": "6.1.5"
+    },
+    {
+      "name": "Google Sheets",
+      "version": "1.3.0"
+    },
+    {
+      "name": "Heatit Controls",
+      "version": "4.5.3"
+    },
+    {
+      "name": "HomeyScript",
+      "version": "3.6.3"
+    },
+    {
+      "name": "Husqvarna Automower Connect",
+      "version": "1.4.3"
+    },
+    {
+      "name": "IKEA Home Smart",
+      "version": "2.10.4"
+    },
+    {
+      "name": "Marmitek",
+      "version": "1.1.0"
+    },
+    {
+      "name": "Min Renovasjon",
+      "version": "1.0.3"
+    },
+    {
+      "name": "Netatmo",
+      "version": "5.8.7"
+    },
+    {
+      "name": "Nexa",
+      "version": "2.4.12"
+    },
+    {
+      "name": "Norske tjenester",
+      "version": "2.21.9"
+    },
+    {
+      "name": "Philips Hue",
+      "version": "7.3.16"
+    },
+    {
+      "name": "Plejd",
+      "version": "3.5.4"
+    },
+    {
+      "name": "Power by the Hour",
+      "version": "8.4.1"
+    },
+    {
+      "name": "ROBB smarrt",
+      "version": "2.9.9"
+    },
+    {
+      "name": "Samsung SmartThings",
+      "version": "4.0.1"
+    },
+    {
+      "name": "Samsung SmartTV",
+      "version": "2.2.2"
+    },
+    {
+      "name": "SiHAS",
+      "version": "1.1.7"
+    },
+    {
+      "name": "Somfy RTS",
+      "version": "3.3.2"
+    },
+    {
+      "name": "Sonos",
+      "version": "6.7.8"
+    },
+    {
+      "name": "Sparegris",
+      "version": "0.21.14"
+    },
+    {
+      "name": "Spotify",
+      "version": "5.3.0"
+    },
+    {
+      "name": "Strømregning",
+      "version": "1.12.0"
+    },
+    {
+      "name": "Telldus",
+      "version": "2.2.0"
+    },
+    {
+      "name": "Tibber",
+      "version": "1.10.5"
+    },
+    {
+      "name": "Tibber Widget for Homey Dashboard",
+      "version": "1.0.4"
+    },
+    {
+      "name": "Verisure",
+      "version": "3.4.14"
+    },
+    {
+      "name": "Virtuelle Enheter",
+      "version": "1.4.1"
+    },
+    {
+      "name": "Vision Security",
+      "version": "2.10.1"
+    },
+    {
+      "name": "Volvo On Call",
+      "version": "1.6.6"
+    },
+    {
+      "name": "Værvarsel",
+      "version": "1.5.3"
+    },
+    {
+      "name": "Yale Access",
+      "version": "2.7.0"
+    },
+    {
+      "name": "Zaptec",
+      "version": "1.10.4"
+    }
+  ],
+  "flows": [],
+  "advancedFlows": [
+    {
+      "name": "Bakside enkel",
+      "enabled": false
+    },
+    {
+      "name": "Dag",
+      "enabled": true
+    },
+    {
+      "name": "Ferie",
+      "enabled": false
+    },
+    {
+      "name": "Framside enkel",
+      "enabled": false
+    },
+    {
+      "name": "Gang",
+      "enabled": false
+    },
+    {
+      "name": "Garasjeport Bryter gang",
+      "enabled": true
+    },
+    {
+      "name": "Garasjeport lys",
+      "enabled": true
+    },
+    {
+      "name": "Garderobe Master bedroom",
+      "enabled": true
+    },
+    {
+      "name": "Garderobe skap",
+      "enabled": true
+    },
+    {
+      "name": "Hue Milla",
+      "enabled": true
+    },
+    {
+      "name": "Knapp port",
+      "enabled": true
+    },
+    {
+      "name": "Lys høy",
+      "enabled": true
+    },
+    {
+      "name": "Markiser framside",
+      "enabled": false
+    },
+    {
+      "name": "Natt",
+      "enabled": true
+    },
+    {
+      "name": "Pris strøm",
+      "enabled": true
+    },
+    {
+      "name": "Sikring lading",
+      "enabled": true
+    },
+    {
+      "name": "Stemmestyring garasjeport",
+      "enabled": false
+    },
+    {
+      "name": "Strømpriser",
+      "enabled": false
+    },
+    {
+      "name": "Stue_kjøkken",
+      "enabled": false
+    },
+    {
+      "name": "V90",
+      "enabled": true
+    },
+    {
+      "name": "Varsel Bad",
+      "enabled": false
+    },
+    {
+      "name": "Varsel Bad (Kopier)",
+      "enabled": false
+    },
+    {
+      "name": "Varsel Gang",
+      "enabled": false
+    },
+    {
+      "name": "Varsel Stue og kjøkken",
+      "enabled": false
+    },
+    {
+      "name": "XC40",
+      "enabled": true
+    }
+  ],
+  "logicVariables": [
+    {
+      "name": "Feilteller_Gang",
+      "type": "number"
+    },
+    {
+      "name": "Strøm_Total_Naa",
+      "type": "number"
+    },
+    {
+      "name": "Strømpris_Dagens_Høyeste",
+      "type": "number"
+    },
+    {
+      "name": "Strømpris_Dagens_laveste",
+      "type": "number"
+    }
+  ],
+  "errors": []
+}
+  </pre>
+</body>
+</html>

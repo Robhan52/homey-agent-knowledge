@@ -1,1 +1,30 @@
-fetch('./data/homey-inventory.json')
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homey-inventar</title>
+</head>
+<body>
+  <h1>Homey-inventar</h1>
+  <pre id="inventory">Laster inventar…</pre>
+
+  <script>
+    fetch('./homey-inventory.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Kunne ikke hente inventaret');
+        }
+        return response.json();
+      })
+      .then(data => {
+        document.getElementById('inventory').textContent =
+          JSON.stringify(data, null, 2);
+      })
+      .catch(error => {
+        document.getElementById('inventory').textContent =
+          'Feil: ' + error.message;
+      });
+  </script>
+</body>
+</html>
